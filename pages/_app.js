@@ -13,12 +13,19 @@ const colors = {
 
 const fonts = {
     heading: 'Nunito-Extrabold',
-    Text: 'Nunito-regular',
     body: 'Nunito-light',
-    button: 'Nunito-regular',
+
 };
 
-const theme = extendTheme({ colors, fonts });
+const components = {
+    Button: {
+      baseStyle: {
+        fontFamily: 'Nunito-medium',
+      }
+    }
+}
+
+const theme = extendTheme({ colors, fonts, components });
 
 function MyApp({ Component, pageProps }) {
     return (

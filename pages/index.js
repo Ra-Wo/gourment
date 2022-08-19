@@ -1,4 +1,4 @@
-import { Box, Container, Text, Stack, Image } from '@chakra-ui/react';
+import { Box, Container, Text, Stack, Image, Heading } from '@chakra-ui/react';
 import Head from 'next/head';
 import Header from '../componenets/header/Header';
 import { Button, ButtonGroup } from '@chakra-ui/react';
@@ -31,14 +31,13 @@ export default function Home() {
                     minH='80vh'
                     justifyContent='center'
                     direction={{ base: 'column-reverse', md: 'row' }}
-                    //   bg='red.100'
                     alignItems='center'
                     pb={{ base: '20px' }}
                 >
                     <Box w='full'>
-                        <Text fontFamily='Nunito-Extrabold' fontSize={{ base: '40px', md: '60px', xl: '80px' }} color='brand.700' lineHeight={1.18}>
+                        <Heading fontSize={{ base: '40px', md: '60px', xl: '80px' }} color='brand.700' lineHeight={1.18}>
                             We know the best spots just for you!
-                        </Text>
+                        </Heading>
                         <Stack w={{ base: 'full', md: '70%' }} fontSize='20px'>
                             <Text color='brand.800'>
                                 Gourmet is an app that helps you find only the
@@ -50,10 +49,10 @@ export default function Home() {
                             </Text>
                         </Stack>
                         <ButtonGroup gap='4' mt={6} flexWrap={'wrap'}>
-                            <Button bg='brand.700' color='brand.900' colorScheme='whiteAlpha' fontFamily='Nunito-regular' px={{ base: 6, md: 9 }}>
+                            <Button bg='brand.700' color='brand.900' colorScheme='whiteAlpha' px={{ base: 6, md: 9 }}>
                                 Find restaurants
                             </Button>
-                            <Button colorScheme='blackAlpha' color='brand.700' bg='#083B4F' fontFamily='Nunito-regular' px={9}>
+                            <Button colorScheme='blackAlpha' color='brand.700' bg='#083B4F' px={9}>
                                 Learn More
                             </Button>
                         </ButtonGroup>
