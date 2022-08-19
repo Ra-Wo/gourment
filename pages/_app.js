@@ -15,6 +15,7 @@ const fonts = {
     heading: 'Nunito-Extrabold',
     Text: 'Nunito-regular',
     body: 'Nunito-light',
+    button: 'Nunito-regular',
 };
 
 const theme = extendTheme({ colors, fonts });
