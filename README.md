@@ -6,6 +6,10 @@ This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next
 
 ## Getting Started
 
+```bash
+git clone https://github.com/Ra-Wo/gourment.git && cd gourment
+```
+
 First, install dependencies:
 
 ```bash
